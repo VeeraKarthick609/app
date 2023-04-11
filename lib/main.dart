@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:floating_snackbar/floating_snackbar.dart';
 
 import 'widgets/SnackBar/snack_bar.dart';
 import 'widgets/TextFields/multi_line_field.dart';
@@ -128,6 +129,19 @@ class _MyHomePageState extends State<MyHomePage> {
               child: MultiLineField(
                 hintText: "Message",
                 controller: TextEditingController(),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(
+                onPressed: () {
+                  FloatingSnackBar(
+                      message: "Hey I am testing this snackbar",
+                      textColor: Colors.white,
+                      backgroundColor: Colors.blue,
+                      context: context);
+                },
+                child: Text("Press"),
               ),
             ),
           ],
