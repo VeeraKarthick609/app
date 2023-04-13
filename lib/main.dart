@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:floating_snackbar/floating_snackbar.dart';
 
-import 'widgets/SnackBar/snack_bar.dart';
 import 'widgets/TextFields/multi_line_field.dart';
 import 'widgets/TextFields/password_field.dart';
 import 'widgets/TextFields/single_line_field.dart';
